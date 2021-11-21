@@ -4,11 +4,11 @@ import neo4j from "neo4j-driver";
 
 const typeDefs = gql`
   type Biography {
-    id: String
-    data: String
+    id: String!
+    data: String!
   }
   type Biographies {
-    entries: [Biography]
+    entries: [Biography]!
   }
 `;
 
